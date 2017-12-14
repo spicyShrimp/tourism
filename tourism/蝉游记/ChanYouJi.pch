@@ -1,0 +1,44 @@
+//
+//  ChanYouJi.pch
+//  蝉游记
+//
+//  Created by Charles on 15/7/7.
+//  Copyright (c) 2015年 Charles. All rights reserved.
+//
+
+#ifndef ____ChanYouJi_pch
+#define ____ChanYouJi_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "UIView+Extension.h"
+#import "UIBarButtonItem+Extension.h"
+#import "UIButton+Extension.h"
+
+#import "NYSegmentedControl.h"
+#import "AFNetworking.h"
+#import <SystemConfiguration/SystemConfiguration.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+#define AFNETWORKING_ALLOW_INVALID_SSL_CERTIFICATES
+#import "MJRefresh.h"
+#import "MJExtension.h"
+#import "UIImageView+WebCache.h"
+#import "UIButton+WebCache.h"
+#import "PendulumView.h"
+
+#define MyWidth [UIScreen mainScreen].bounds.size.width
+#define MyHeight [UIScreen mainScreen].bounds.size.height
+
+#define WhiteColor [UIColor whiteColor]//白色
+#define ThemeColor [UIColor colorWithRed:18.0/255 green:135.0/255 blue:217.0/255 alpha:1.0]//主题色
+
+#define Default [NSUserDefaults standardUserDefaults]
+
+#ifdef DEBUG // 处于开发阶段
+#define ARLog(...) NSLog(__VA_ARGS__)
+#else // 处于发布阶段
+#define ARLog(...)
+#endif
+
+
+#endif
